@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <div class="leftPage">
+        <div class="formSection">
+<div class="inputSection">
+          <h1 class="formHeader">Player Form</h1>
+          <div class="inputArea">
+            <div>
+              <label>Name</label>
+            </div>
+            <div class="userInput">
+              <input class="inputFields" type="text" id="name" />
+              <span id="nameError" class="errorMsg">Enter a valid name</span>
+            </div>
+          </div>
+          <div class="inputArea">
+            <div><label>Age</label></div>
+            <div class="userInput">
+              <input
+                class="inputFields"
+                min="1"
+                max="99"
+                type="number"
+                id="age"
+              />
+              <span id="ageError" class="errorMsg">Enter a valid age</span>
+            </div>
+          </div>
+          <div class="inputArea">
+            <div>
+              <label>Gender</label>
+            </div>
+            <div class="userInput">
+              <select class="inputFields" id="gender">
+                <option value="" selected disabled hidden>Choose here</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+              </select>
+              <span id="genderError" class="errorMsg">Select a gender</span>
+            </div>
+          </div>
+          <div class="inputArea">
+            <div>
+              <label>Sport Type</label>
+            </div>
+            <div class="userInput">
+              <select class="inputFields" id="sportType">
+                <option value="" selected disabled hidden>Choose here</option>
+                <option value="indoor">Indoor</option>
+                <option value="outdoor">Outdoor</option>
+              </select>
+              <span id="sportTypeError" class="errorMsg"
+                >Select a sport type</span
+              >
+            </div>
+          </div>
+          <div class="inputArea">
+            <div><label>Sport</label></div>
+            <div class="userInput">
+              <select class="inputFields" id="sport">
+                <option value="" selected disabled hidden>Choose here</option>
+              </select>
+              <span id="sportError" class="errorMsg">Select a sport</span>
+            </div>
+          </div>
+          <div class="inputArea">
+            <div>
+              <label id="profileLabel">Profile</label>
+            </div>
+
+            <div class="userInput">
+              <input
+                class="inputFields"
+                class="typeInput"
+                id="profile"
+                type="file"
+              />
+              <label class="inputFields" id="newImgLabel" for="profile">Click to select new image</select></label>
+              <span id="profileError" class="errorMsg">Select image</span>
+              <div>
+                <img class="previewImg" id="previewImg" />
+              </div>
+            </div>
+          </div>
+          <div class="btnSection">
+            <button class="btn" id="submitBtn">Submit</button>
+            <button class="btn cancelBtn" id="cancelBtn">Cancel</button>
+          </div>
+        </div>
+        </div>
+        
+        <div class="submitSection">
+          <div class="searchAndFilter">
+            <div class="searchSection">
+              <label class="searchLabel">Search using name</label>
+              <input class="inputFields" type="text" id="searchField" />
+            </div>
+            <div class="searchSection">
+              <label class="filterLabel">Filter using game type</label>
+              <select class="inputFields" id="filterField">
+                <option value="all" selected>All</option>
+                <option value="indoor">Indoor</option>
+                <option value="outdoor">Outdoor</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rightPage">
+        <div class="rightHeader">
+          <h1>Players' Details</h1>
+        </div>
+
+        <div class="playersSection"></div>
+      </div>
+    </div>
+  </body>
+</html>

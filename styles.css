@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.errorMsg {
+  color: red;
+  font-weight: lighter;
+}
+
+.inputFields {
+  width: 200px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.userInput {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+button {
+  padding: 5px;
+  width: 60px;
+  border-radius: 5px;
+  border-width: 1px;
+}
+.formSection {
+  display: flex;
+  border-bottom: 1px solid gray;
+  padding-bottom: 25px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.btn:hover {
+  box-shadow: 1px 1px #e2e2e2;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  transform: scale(1.05);
+  transition: ease-out;
+  transition-duration: 100ms;
+  color: green;
+}
+.cancelBtn:hover {
+  color: red;
+}
+body {
+  height: 100%;
+  overflow: auto;
+}
+.page {
+  display: flex;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.leftText {
+  text-transform: uppercase;
+  border-bottom: 2px solid;
+  text-align: center;
+}
+.rightText {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: space-evenly;
+  padding-top: 5px;
+  text-align: start;
+}
+.leftPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  gap: 20px;
+  justify-content: center;
+  overflow: hidden;
+  border-right: 1px solid gray;
+}
+.rightPage {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  width: 50%;
+  height: 94vh;
+  overflow: auto;
+}
+.rightHeader {
+  text-align: center;
+}
+.formHeader {
+  text-align: center;
+}
+
+.btnSection {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+.previewImg {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+}
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 350px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  height: 500px;
+  justify-content: space-evenly;
+}
+.inputArea > p {
+  margin: 0;
+}
+.inputArea {
+  display: flex;
+  justify-content: space-between;
+}
+.playerCard {
+  justify-content: space-evenly;
+  flex-direction: column;
+  border: 1px solid #e2e2e2;
+  border-radius: 20px;
+  /* background-color: floralwhite; */
+  /* padding: 10px; */
+  height: 175px;
+  width: 150px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 4px 1px rgba(0, 0, 0, 0.09);
+  position: relative;
+  border: 10px white solid;
+}
+
+.playerCard:hover {
+  transform: scale(1.1);
+  transition: ease-out;
+  transition-duration: 200ms;
+}
+.playerCard > p {
+  margin: 0;
+  padding: 2px 0;
+}
+.cardBtnSection {
+  display: flex;
+  gap: 5px;
+  padding: 5px 10px;
+}
+.cardBtn:hover {
+  box-shadow: 1px 1px #e2e2e2;
+  border: 0;
+  cursor: pointer;
+  font-weight: normal;
+  transition: ease-out;
+  transition-duration: 100ms;
+  text-decoration: underline;
+}
+.cardBtn {
+  font-weight: lighter;
+  padding: 3px;
+}
+.removeBtn.hover {
+  color: red;
+}
+.searchLabel {
+  padding-right: 30px;
+}
+.filterLabel {
+  padding-right: 10px;
+}
+.playersSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  height: fit-content;
+}
+.submitSection {
+  text-align: center;
+}
+.searchAndFilter {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.errorInput {
+  border: 1px solid red;
+  background-color: #fed2d2;
+}
+.cardBG {
+  height: 175px;
+  width: 150px;
+  filter: blur(5px);
+  background-position: center;
+  background-size: 175px 150px;
+  position: absolute;
+  z-index: -10;
+  border-radius: 20px;
+}
+.cardText {
+  text-align: center;
+  padding: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.typeInput {
+  width: 175px;
+}
