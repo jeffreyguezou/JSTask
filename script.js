@@ -349,8 +349,6 @@ const createCard = (player) => {
 
   if (player.profileURL) {
     bgDiv.style.backgroundImage = `url("${player.profileURL}")`;
-  } else {
-    bgDiv.style.backgroundImage = `url("man-avatar-profile-picture-vector-illustration_268834-538.avif")`;
   }
 
   bgDiv.classList.add("cardBG");
